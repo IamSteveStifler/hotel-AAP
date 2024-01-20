@@ -1,0 +1,23 @@
+server:
+  port: 8000
+
+spring:
+  datasource:
+    username: test
+    password: Test@1385
+    url: jdbc:mysql://localhost:3306/hotel-AAP-db
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      format_sql: true
+  servlet:
+    multipart:
+    max-file-size: 5MB
+    max-request-size: 5MB
+    file-size-threshold: 2KB
+  security:
+    user:
+      name: aman
+      password: pass123
